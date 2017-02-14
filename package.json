@@ -1,0 +1,10 @@
+{
+  "name": "intern-visual-demo",
+  "devDependencies": {
+    "intern": "^3.3.1",
+    "intern-visual": "^0.1.1"
+  },
+  "scripts": {
+    "test": "intern-runner config=tests/intern"
+  }
+}
