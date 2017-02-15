@@ -1,6 +1,6 @@
 define([
 	'intern!object',
-	'intern-visual'
+	'intern/dojo/node!intern-visual'
 ], function (
 	registerSuite,
 	internVisual
