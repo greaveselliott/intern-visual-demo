@@ -1,6 +1,7 @@
 {
   "name": "intern-visual-demo",
   "devDependencies": {
+    "@dojo/loader": "^2.0.0-beta.9",
     "intern": "^3.3.1",
     "intern-visual": "^0.1.1"
   },
