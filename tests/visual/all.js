@@ -1,5 +1,5 @@
 define([
-	'./configuration.js',
-	'./programmatic.js'
+	'./basic.js',
+	'./longPage.js'
 ], function () {
 });

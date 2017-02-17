@@ -10,10 +10,7 @@ define({
 
 	loaderOptions: {
 		packages: [
-			{ name: 'tests', location: 'tests' },
-			{ name: 'intern-visual', location: "node_modules/intern-visual/src" },
-			{ name: 'ts-helpers', location: 'node_modules/ts-helpers', main: 'index.js' },
-			{ name: 'dojo', location: 'node_modules/intern/browser_modules/dojo' }
+			{ name: 'intern-visual', location: "node_modules/intern-visual/src" }
 		]
 	},
 
@@ -24,6 +21,12 @@ define({
 	functionalSuites: [
 		'tests/visual/all'
 	],
+
+	reporters: [
+		'Runner',
+		{ id: 'intern-visual/reporters/VisualRegression', baselineLocation: './visual-test/baselines', reportLocation: './reports' }
+	],
+
 
 	excludeInstrumentation: /^(tests|node_modules)/
 });
